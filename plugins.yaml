@@ -9,3 +9,10 @@ plugins:
 workflows:
   hello:
     mapping: hello_workflow_plugin.helloworld_plugin.workflows.hello
+node_types:
+  cloudify.hello.Instance:
+    derived_from: cloudify.nodes.Root
+    interfaces:
+      cloudify.interfaces.hello:
+        hello:
+          implementation: helloworld_plugin.tasks.operation_log

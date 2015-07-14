@@ -12,6 +12,6 @@ def hello(**kwargs):
 
     for node in ctx.nodes:
         for instance in node.instances:
-            graph.add_task(instance.execute_operation('helloworld_plugin.tasks.operation_log'))
+            graph.add_task(instance.execute_operation('cloudify.interfaces.hello.hello'))
 
     return graph.execute()
