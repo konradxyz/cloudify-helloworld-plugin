@@ -11,7 +11,8 @@ def hello(**kwargs):
     graph = ctx.graph_mode()
 
     for node in ctx.nodes:
-        for instance in node.instances:
-            graph.add_task(instance.execute_operation('cloudify.interfaces.hello.hello'))
+        if 'cloudify.hello.instance' in node.type_hierarchy:
+            for instance in node.instances:
+                graph.add_task(instance.execute_operation('cloudify.interfaces.hello.hello'))
 
     return graph.execute()
