@@ -7,7 +7,7 @@ import uuid
 @operation
 def operation_log(**kwargs):
   msg = ctx.instance.runtime_properties.get('msg', 'no msg')
-  new_msg = uuid.uuid4()
+  new_msg = str(uuid.uuid4())
   ctx.instance.runtime_properties['msg'] = new_msg
   logger = logging.getLogger(__name__)
   logger.warn('old msg: {}'.format(msg))
