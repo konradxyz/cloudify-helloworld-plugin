@@ -15,4 +15,4 @@ node_types:
     interfaces:
       cloudify.interfaces.hello:
         hello:
-          implementation: host_agent.helloworld_plugin.tasks.operation_log
+          implementation: hello_writer_plugin.helloworld_plugin.tasks.operation_log
