@@ -1,0 +1,8 @@
+plugins:
+  hello_writer_plugin:
+    executor: host_agent
+    source: https://github.com/konradxyz/cloudify-helloworld-plugin/archive/master.zip
+  hello_workflow_plugin:
+    executor: central_deployment_agent
+    source: https://github.com/konradxyz/cloudify-helloworld-plugin/archive/master.zip
+
