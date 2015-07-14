@@ -8,4 +8,4 @@ plugins:
 
 workflows:
   hello:
-    mapping: hello_workflow_plugin.hello_workflow.workflows.
+    mapping: hello_workflow_plugin.helloworld_plugin.workflows.hello
