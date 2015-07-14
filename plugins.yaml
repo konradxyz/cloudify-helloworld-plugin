@@ -6,3 +6,6 @@ plugins:
     executor: central_deployment_agent
     source: https://github.com/konradxyz/cloudify-helloworld-plugin/archive/master.zip
 
+workflows:
+  hello:
+    mapping: hello_workflow_plugin.hello_workflow.workflows.
