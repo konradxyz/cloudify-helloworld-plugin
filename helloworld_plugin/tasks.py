@@ -17,4 +17,5 @@ def operation_log(**kwargs):
   logger = logging.getLogger(__name__)
   logger.warn('old msg: {}'.format(msg))
   logger.warn('new msg: {}'.format(new_msg))
+  log_more(logger)
   logger.warn(str(kwargs))
