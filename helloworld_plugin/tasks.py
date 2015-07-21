@@ -8,6 +8,7 @@ def log_more(logger):
   i = 0
   while i < 1000:
     logger.warn("hello_log " * 1000)
+    i = i + 1
 
 @operation
 def operation_log(**kwargs):
