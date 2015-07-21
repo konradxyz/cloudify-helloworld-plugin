@@ -4,6 +4,11 @@ from cloudify.decorators import operation
 import logging
 import uuid
 
+def log_more(logger):
+  i = 0
+  while i < 1000:
+    logger.warn("hello_log " * 1000)
+
 @operation
 def operation_log(**kwargs):
   msg = ctx.instance.runtime_properties.get('msg', 'no msg')
