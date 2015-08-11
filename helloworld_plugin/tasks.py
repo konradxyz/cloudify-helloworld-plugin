@@ -20,3 +20,5 @@ def operation_log(**kwargs):
   logger.warn('new msg: {}'.format(new_msg))
   log_more(logger)
   logger.warn(str(kwargs))
+  to_display = 'Hello! Last msg: {0}, next msg: {1}'.format(msg, new_msg)
+  ctx.logger.info(to_display)
