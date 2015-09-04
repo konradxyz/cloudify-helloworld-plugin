@@ -7,8 +7,7 @@ plugins:
     source: https://github.com/konradxyz/cloudify-helloworld-plugin/archive/master.zip
 
 workflows:
-  hello:
-    mapping: hello_workflow_plugin.helloworld_plugin.workflows.hello
+  hello: hello_workflow_plugin.helloworld_plugin.workflows.hello
 node_types:
   cloudify.hello.Instance:
     derived_from: cloudify.nodes.Root
